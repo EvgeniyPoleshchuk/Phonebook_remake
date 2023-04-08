@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -72,6 +73,7 @@ public class Main {
 
             System.out.println("В какую группу добавить? Если несколько вводите через пробел");
             String[] groupName = bufferedReader.readLine().split(" ");
+            System.out.println(Arrays.toString(groupName));
             phoneBook.addContactInGroup(groupName, contact);
         }
     }
